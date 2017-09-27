@@ -1,0 +1,28 @@
+
+.related-products{
+  margin-top: 25px;
+  &.block{
+    .title{
+      font-size: 25px;
+      font-weight: normal;
+      text-align: center;
+      position: relative;
+      padding-bottom: 5px;
+      text-align: center;
+      display: block;
+      text-transform: none;
+      &:after{
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0px;
+        background-color: $text_yellow;
+      }
+    }
+  }
+  .slick-next::before, .slick-prev::before{
+    color: $bg_4;
+  }
+}

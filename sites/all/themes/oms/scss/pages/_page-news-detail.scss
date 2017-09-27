@@ -1,0 +1,18 @@
+h1.news-title{
+  font-size: 18px;
+  font-weight: bold;
+  color: $bg_4;
+  margin-top: 0px;
+}
+#block-system-main{
+  .node-full{
+    .form-item{
+      margin: 0px;
+    }
+  }
+}
+.node-article{
+  .field-type-text-with-summary{
+    text-align: justify;
+  }
+}

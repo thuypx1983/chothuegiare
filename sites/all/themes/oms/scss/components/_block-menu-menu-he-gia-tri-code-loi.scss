@@ -1,0 +1,38 @@
+#block-menu-menu-he-gia-tri-code-loi{
+  ul.menu{
+    padding: 0px;
+    margin: 0px;
+    li{
+      list-style: none;
+      display: block;
+      border-bottom: 1px solid $text_black_light;
+      padding: 10px 0px;
+      a{
+        font-size: 15px;
+        color: $text_gray_light;
+        display: block;
+        &.active{
+          color: $bg_4;
+          font-weight: bold;
+        }
+        position: relative;
+        padding-left: 13px;
+        &:before{
+          position: absolute;
+          content: '\2022\2002';
+          left: 0px;
+          font-size: 15px;
+          top: -3px;
+        }
+      }
+    }
+  }
+}
+.node-type-page{
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

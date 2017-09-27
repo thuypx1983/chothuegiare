@@ -1,0 +1,24 @@
+
+.view-jobs{
+  .views-row {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $text_gray_light;
+    &:last-child{
+      border-bottom: 0px;
+    }
+    .views-field-title{
+      a{
+        display: block;
+        color: $text_gray;
+        padding: 10px 0px;
+        text-align: justify;
+      }
+    }
+    .views-field-body{
+       text-align: justify;
+       color: $text_gray_light;
+     }
+
+  }
+}

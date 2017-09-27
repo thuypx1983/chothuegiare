@@ -1,0 +1,22 @@
+.menu-news{
+  ul{
+    padding: 0px;
+    margin: 0px;
+    li{
+      list-style: none;
+      display: block;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $text_gray_light;
+      a{
+        font-size: 15px;
+        color: $text_black_light;
+        &.active{
+          color: $bg_4;
+        }
+        &:before{
+          content: "\2022\2002";
+        }
+      }
+    }
+  }
+}

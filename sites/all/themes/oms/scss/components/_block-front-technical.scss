@@ -1,0 +1,121 @@
+.technical{
+  div.title{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    span{
+      font-size: 25px;
+      color: $bg_4;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  .block{
+    .title{
+      font-size: 20px;
+      text-transform: none;
+      display: inline-block;
+      padding-bottom: 10px;
+      color: $bg_2;
+      &:after{
+        background-color: $text_yellow;
+        width: 50px;
+      }
+    }
+  }
+  .view-technical{
+    .views-field-title{
+      padding-top: 20px;
+      padding-bottom: 5px;
+      a{
+        font-size: 16px;
+
+      }
+    }
+    .views-field-body{
+      color: $text_gray_light;
+    }
+  }
+  .view-technical-sub{
+    ul{
+      padding: 5px 20px 5px 10px;
+      background-color: $bg_7;
+      li{
+        padding: 5px;
+        list-style: none;
+        margin: 0px;
+        position: relative;
+        &:after{
+          right: -6px;
+          content: "...";
+          position: absolute;
+          top: 5px;
+        }
+        a{
+          padding-left: 15px;
+          color: $text_gray;
+          display: inline-block;
+          width: 100%;
+          white-space:nowrap;
+          overflow:hidden;
+          position: relative;
+          margin-right: 15px;
+          &:before{
+            background-color: $text_gray;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(0px, -50%);
+            width: 4px;
+          }
+
+        }
+      }
+    }
+  }
+}
+.home-highlight-box3{
+  margin-top:40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@include bp(max-width,$bp-tablet){
+  .home-highlight-box3{
+    margin-top:0px;
+  }
+
+  .technical{
+    div.title{
+      span{
+        font-size: inherit;
+      }
+      padding: 0px;
+      margin-bottom: 30px;
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: $bg_2;
+
+        width: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -5px;
+      }
+    }
+    .block{
+      .title{
+        font-size: inherit;
+        span{
+          font-size: inherit;
+        };
+      }
+    }
+  }
+}

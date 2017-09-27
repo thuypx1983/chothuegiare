@@ -1,0 +1,29 @@
+
+.block-system{
+  .view-technical-list{
+    text-align: center;
+    .views-row{
+      margin-bottom: 20px;
+      .views-field-title{
+        padding-bottom: 5px;
+        padding-top: 20px;
+        a{
+          font-size: 18px;
+        }
+      }
+      .views-field-field-image{
+        padding: 5px 20px;
+        a{
+          img{
+            max-height: 100%;
+            display: block;
+            box-sizing:border-box;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}

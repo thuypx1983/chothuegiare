@@ -1,0 +1,5 @@
+name = product extra field
+description = product extend field.
+project = Sutunam
+core = 7.x
+package = Sutunam

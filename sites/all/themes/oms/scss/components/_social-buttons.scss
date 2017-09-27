@@ -1,0 +1,15 @@
+.social-buttons{
+  display: table;
+  width: 100%;
+  text-align: right;
+  .facebook-button{
+    display: inline-block;
+    height: 27px;
+    overflow: hidden;
+    margin-right: 4px;
+  }
+  .google-plus-button{
+    overflow: hidden;
+    display: inline-block;
+  }
+}

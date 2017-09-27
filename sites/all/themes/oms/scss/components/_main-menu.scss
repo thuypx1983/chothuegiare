@@ -1,0 +1,154 @@
+#navigation{
+  #main-menu>ul.menu{
+    display: block;
+    &>li{
+      list-style: none;
+      display: block;
+      float: left;
+      padding: 0px 0px 0px 30px;
+      margin: 0px;
+      position: relative;
+      a{
+        font-size: 18px;
+        padding:25px 0px;
+        display: block;
+        position: relative;
+        color: $bg_4;
+
+        &.active{
+          background: transparent;
+          color: $text_red;
+          &:after{
+            position: absolute;
+            content: "";
+            bottom: 0px;
+            width: 100%;
+            background-color: $text_red;
+            height: 3px;
+            left:0px;
+          }
+        }
+        &:hover{
+          background: transparent;
+          color:$text_red;
+          text-decoration: none;
+          &:after{
+            position: absolute;
+            content: "";
+            bottom: 0px;
+            width: 100%;
+            background-color: $text_red;
+            height: 3px;
+            left:0px;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+
+@include bp(min-width,$bp-tablet+1){
+  #navigation #main-menu>ul.menu>li{
+    &:hover{
+      ul{
+        display: block;
+      }
+    }
+    ul{
+      display: none;
+      border-top: 3px solid $text_red;
+      position: absolute;
+      width: 250px;
+      top: calc(100% - 3px);
+      left: 0px;
+      z-index: 9999;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding-left: 0px;
+      padding-bottom: 10px;
+      li{
+        list-style: none;
+        a{
+          padding: 8px 0px 0px 0px;
+          font-size: 16px;
+          &:after{
+            display: none;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
+@include bp(max-width,$bp-tablet){
+  .hotline-mobile{
+    text-align: center;
+    font-size: 13px;
+    color: $text_red;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $bg_1;
+  }
+  .menu-btn{
+    display: inline-block;
+    float: right;
+    span.icon-bar{
+      display: block;
+      height: 4px;
+      background-color: $bg_4;
+      width: 30px;
+      margin-bottom: 8px;
+      border-radius: 2px;
+    }
+  }
+  .search-icon{
+    display: inline-block;
+    float: right;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    color: $bg_4;
+  }
+  .mobile-header{
+    display: table;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    #logo{
+      display: table-cell !important;
+      float: none;
+    }
+    .mobile-menu{
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+
+
+    }
+
+
+  }
+  #header .pull-left #logo a{
+    justify-content: left;
+    align-items: left;
+    img{
+      max-height: 68px;
+    }
+  }
+
+  #main-menu>ul.menu>li{
+
+    ul{
+      padding-left: 10px;
+      li{
+        a{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

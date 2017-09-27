@@ -1,0 +1,33 @@
+@include bp(max-width,$bp-tablet){
+
+}
+.button-call{
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  a{
+    color: $text_white;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #164D81 0%, #7DB9E8 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #164D81 0%, #7DB9E8 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(top, #164D81 0%, #7DB9E8 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #164D81), color-stop(100, #7DB9E8));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #164D81 0%, #7DB9E8 100%);
+
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #164D81 0%, #7DB9E8 100%);
+}

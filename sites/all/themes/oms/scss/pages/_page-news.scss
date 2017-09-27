@@ -1,0 +1,20 @@
+
+.view-news.view-display-id-page_1,
+.view-news.view-display-id-page_2{
+  .views-row {
+    margin-bottom: 20px;
+    .views-field-title{
+      a{
+        display: block;
+        color: $text_gray;
+        padding: 10px 0px;
+        text-align: justify;
+        height: 80px;
+
+      }
+    }
+    .views-row{
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.pager li > a, .pager li > span{
+  border-radius: 0px;
+}
+.item-list .pager li{
+  padding: 5px;
+  margin-left: 2px;
+  a,span{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

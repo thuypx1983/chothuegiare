@@ -1,0 +1,65 @@
+.category-list{
+  padding-top: 35px;
+  .views-row{
+    margin-bottom: 30px;
+    position: relative;
+    .views-field-name{
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      font-size: 30px;
+      color: $text-white;
+      padding-left: 15px;
+      padding-right: 50px;
+    }
+    .views-field-name-1{
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      a{
+        background-color: $text_white;
+        padding: 5px 25px 5px 5px;
+        font-size: 11px;
+        display: block;
+        position: relative;
+        &::after{
+          display: block;
+          content: "\00bb";
+          position: absolute;
+          right: 0px;
+          padding: 2px 6px;
+          background-color: $bg_2;
+          color: $text_white;
+          top: 0px;
+          font-size: 15px;
+        }
+      }
+
+
+    }
+
+    .views-field-field-image{
+      img{
+        -webkit-filter: brightness(.8);
+        filter: brightness(.8);
+      }
+    }
+  }
+}
+@include bp(max-width,$bp-tablet){
+  .category-list{
+
+    .views-row{
+
+      .views-field-name{
+        width: auto;
+        padding-right: 10px;
+        font-size: 20px;
+      }
+      .views-field-name-1{
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.news-left-sidebar{
+  &.block{
+    .title{
+      font-size: 18px;
+      font-weight: normal;
+      text-transform: none;
+      font-weight: bold;
+      &:after{
+        background-color: $text_yellow;
+        width: 50px;
+        bottom: -8px;
+      }
+    }
+    .views-field-title{
+      padding-bottom: 10px;
+      a{
+        color: $text_black_light;
+        font-size: 14px;
+        text-align: justify;
+        display: block;
+
+        &:before{
+          content: '\2022\2002';
+        }
+      }
+
+    }
+  }
+}

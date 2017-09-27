@@ -1,0 +1,154 @@
+<?php
+/**
+ * Implements hook_node_view().
+ *
+ * Adds a Facebook like button to page nodes.
+ */
+function product_extend_node_view($node, $view_mode, $langcode) {
+    $node->content['social_buttons'] = array(
+      '#type' => 'item',
+      '#title' => '',
+      '#markup' =>  theme('social_buttons', array(
+        'node' => null)),
+      '#attributes' => array('class' => array('social-buttons')),
+    );
+    switch ($node->type) {
+
+      case 'video':
+      case 'technical':
+      case 'job':
+      case 'article':
+        $node->content['news_title'] = array(
+          '#type' => 'item',
+          '#title' => '',
+          '#markup' =>  '<h1 class="news-title">'.$node->title.'</h1>',
+          '#attributes' => array('class' => array('news-title')),
+        );
+        $node->content['created'] = array(
+          '#type' => 'item',
+          '#title' => '',
+          '#markup' =>  '<span class="created">'.format_date($node->created).'</span>',
+          '#attributes' => array('class' => array('created')),
+        );
+        break;
+      case 'product':
+        $node->content['product_title'] = array(
+          '#type' => 'item',
+          '#title' => '',
+          '#markup' =>  '<h1 class="product-title">'.$node->title.'</h1>',
+          '#attributes' => array('class' => array('product-title')),
+        );
+        break;
+      default:
+        break;
+    }
+}
+
+/**
+ * Implements hook_field_extra_fields().
+ *
+ * Declare our Facebook Like button as a pseudo-field.
+ */
+function product_extend_field_extra_fields() {
+    $extra['node']['product']['display'] = array(
+        'product_title' => array(
+            'label' => t('Title'),
+            'description' => t('Title.'),
+            'weight' => 1,
+        ),
+        'social_buttons' => array(
+          'label' => t('social_buttons'),
+          'description' => t('social_buttons'),
+          'weight' => 1,
+        )
+    );
+    $extra['node']['article']['display'] = array(
+      'news_title' => array(
+        'label' => t('Title'),
+        'description' => t('Title.'),
+        'weight' => 1,
+      ),
+      'created' => array(
+        'label' => t('Created date'),
+        'description' => t('created date.'),
+        'weight' => 1,
+      ) ,
+      'social_buttons' => array(
+        'label' => t('social_buttons'),
+        'description' => t('social_buttons'),
+        'weight' => 1,
+      )
+    );
+
+
+  $extra['node']['job']['display'] = array(
+    'news_title' => array(
+      'label' => t('Title'),
+      'description' => t('Title.'),
+      'weight' => 1,
+    ),
+    'created' => array(
+      'label' => t('Created date'),
+      'description' => t('created date.'),
+      'weight' => 1,
+    ) ,
+    'social_buttons' => array(
+      'label' => t('social_buttons'),
+      'description' => t('social_buttons'),
+      'weight' => 1,
+    )
+  );
+
+
+  $extra['node']['technical']['display'] = array(
+    'news_title' => array(
+      'label' => t('Title'),
+      'description' => t('Title.'),
+      'weight' => 1,
+    ),
+    'created' => array(
+      'label' => t('Created date'),
+      'description' => t('created date.'),
+      'weight' => 1,
+    ) ,
+    'social_buttons' => array(
+      'label' => t('social_buttons'),
+      'description' => t('social_buttons'),
+      'weight' => 1,
+    )
+  );
+  $extra['node']['video']['display'] = array(
+    'news_title' => array(
+      'label' => t('Title'),
+      'description' => t('Title.'),
+      'weight' => 1,
+    ),
+    'created' => array(
+      'label' => t('Created date'),
+      'description' => t('created date.'),
+      'weight' => 1,
+    ) ,
+    'social_buttons' => array(
+      'label' => t('social_buttons'),
+      'description' => t('social_buttons'),
+      'weight' => 1,
+    )
+  );
+
+    return $extra;
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function product_extend_theme() {
+  return array(
+    'social_buttons' => array(
+      'variables' => array(
+        'node' => NULL,
+      ),
+      'template' => 'templates/social-buttons',
+    ),
+  );
+}

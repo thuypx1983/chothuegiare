@@ -51,9 +51,17 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             })
+            $('.products-featured .view-content').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            })
         },
 
         autoHeight:function(){
+            STNScript.equalHeight('.category-list .views-row');
             STNScript.equalHeight('.view-id-product_list .views-row');
             STNScript.equalHeight('.view-technical-list .views-row');
             STNScript.equalHeight('.home-highlight-box3 .row>.col-md-3');

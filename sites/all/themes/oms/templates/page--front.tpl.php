@@ -112,6 +112,10 @@
         </div>
     </div>
 
+    <div class="content">
+        <?php render($page['content']); ?>
+    </div>
+
   <?php
   include(drupal_get_path('theme', 'oms').'/templates/footer.tpl.php');
   ?>

@@ -111,6 +111,13 @@
                 return true;
             }
             return false;
+        },
+        menuExpand:function(){
+            $('#main-menu').find('li.expanded ul.menu').before('<i class="fa fa-angle-down"></i>');
+            $(document).on('click','#main-menu .fa',function () {
+
+                $(this).parent().toggleClass('open');
+           })
         }
     }
 
@@ -118,11 +125,12 @@
     $(document).ready(function(){
         $('#block-search-form').prepend('<span class="btn-close">x</span>')
 
+        STNScript.menuExpand();
         STNScript.initSlick();
         STNScript.detectStar();
         STNScript.createMenuMobile();
         STNScript.searchMobile();
-        
+
         $(document).on("click",function (event) {
             if (!$(event.target).is("#block-search-form,.search-icon,.glyphicon-search,#edit-search-block-form--2")) {
                 $('#block-search-form').removeClass('open-popup');;

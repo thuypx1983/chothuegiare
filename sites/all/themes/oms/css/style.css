@@ -225,6 +225,8 @@ body.not-front {
           background-color: #ED443D;
           height: 3px;
           left: 0px; }
+#navigation .fa {
+  display: none; }
 
 @media only screen and (min-width: 768px) {
   #navigation #main-menu > ul.menu > li:hover ul {
@@ -296,10 +298,35 @@ body.not-front {
     #header .pull-left #logo a img {
       max-height: 68px; }
 
-  #main-menu > ul.menu > li ul {
-    padding-left: 10px; }
-    #main-menu > ul.menu > li ul li a {
-      font-size: 20px; } }
+  #main-menu > ul.menu {
+    padding-left: 0px; }
+    #main-menu > ul.menu > li {
+      display: block;
+      float: none !important;
+      padding-left: 0px;
+      border-bottom: 1px solid #7a7a7a; }
+      #main-menu > ul.menu > li a {
+        color: #ffffff !important;
+        display: inline-block !important; }
+      #main-menu > ul.menu > li ul {
+        padding-left: 10px; }
+        #main-menu > ul.menu > li ul li a {
+          font-size: 20px;
+          color: #ffffff;
+          padding-top: 5px;
+          padding-bottom: 5px; }
+      #main-menu > ul.menu > li.expanded {
+        position: relative; }
+        #main-menu > ul.menu > li.expanded .fa {
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          font-size: 30px;
+          top: 25px; }
+        #main-menu > ul.menu > li.expanded ul {
+          display: none; }
+        #main-menu > ul.menu > li.expanded.open ul {
+          display: block; } }
 .menu-top ul {
   padding: 0px;
   display: table;

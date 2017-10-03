@@ -23,13 +23,13 @@ menu_execute_active_handler();
 $contentTypes=array('du-an-cho-thue','du-an','goi-dich-vu');
 include 'lib.php';
 $csv = new parseCSV();
-$csv->auto('F:\Downloads\data-tin.csv');
+$csv->auto('F:\Downloads\data.csv');
 foreach($csv->data as $row){
     //if(!in_array($row['hangsanxuat'],$contentTypes)){
-    if(true){
+    if($row['hangsanxuat']=='du-an'){
         $node = new stdClass();
-        $node->title = $row['tieude'];
-        $node->type = "article";
+        $node->title = $row['ten'];
+        $node->type = "gallary";
         node_object_prepare($node); // Sets some defaults. Invokes hook_prepare() and hook_node_prepare().
         $node->language = LANGUAGE_NONE; // Or e.g. 'en' if locale is enabled
         $node->uid = $user->uid;
@@ -48,30 +48,16 @@ foreach($csv->data as $row){
         };
 
 
-// body
-        $node->body[$node->language][0]['format']  = 'full_html';
-        $node->body[$node->language][0]['value']  = $row['noidung'];
-
 //summary
-        $node->field_summary[$node->language][0]['format']  = 'full_html';
-        $node->field_summary[$node->language][0]['value']  = $row['mota'];
 
-//taxonomy
-        $terms_exsit=taxonomy_get_term_by_name($row['loai']);
-        if(count($terms_exsit)>0){
-            $term=array_shift($terms_exsit);
-        }else{
-            $vocab = taxonomy_vocabulary_machine_name_load('news_category');
-            $term = new stdClass();
-            $term->name = $row['loai'];
-            $term->vid = $vocab->vid;
-            taxonomy_term_save($term);
-        }
+        $node->field_summary1[$node->language][0]['format']  = 'full_html';
+        $node->field_summary1[$node->language][0]['value']  = $row['mota1'];
+
         $node->field_news_category[LANGUAGE_NONE][0]['tid']=$term->tid;
 
         $node->metatags[LANGUAGE_NONE]['title']['value'] = $row['title'];
-        $node->metatags[LANGUAGE_NONE]['description']['value'] = $row['de'];
-        $node->metatags[LANGUAGE_NONE]['keywords']['value'] = $row['keyword'];
+        $node->metatags[LANGUAGE_NONE]['description']['value'] = $row['title'];
+        $node->metatags[LANGUAGE_NONE]['keywords']['value'] = $row['title'];
 
         $node = node_submit($node); // Prepare node for saving
 

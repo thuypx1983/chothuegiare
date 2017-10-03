@@ -58,6 +58,13 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             })
+            $('.gallery-slider .view-content').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            })
         },
 
         autoHeight:function(){

@@ -24,7 +24,13 @@
  * @ingroup views_templates
  */
 ?>
-<a href="javascript:void(0)">
-  <?php echo strip_tags($fields['field_image']->content,'<img>')?>
-  <div><?php echo strip_tags($fields['title']->content,'span')?></div>
-</a>
+<li class="responsiveGallery-item">
+    <a href="javascript:void(0)" class="responsivGallery-link">
+      <?php
+      $img=strip_tags($fields['field_image']->content,'<img>');
+      echo str_replace('img','img class="responsivGallery-pic"',$img)?>
+    </a>
+    <div class="w-responsivGallery-info">
+      <?php echo strip_tags($fields['title']->content,'span')?>
+    </div>
+</li>

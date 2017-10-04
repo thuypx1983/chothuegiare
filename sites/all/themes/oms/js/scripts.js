@@ -65,8 +65,10 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             })
-            $('#dg-container').gallery({
-                autoplay	:	true
+            $('.responsiveGallery-wrapper').responsiveGallery({
+                animatDuration: 400,
+                $btn_prev: $('.responsiveGallery-btn_prev'),
+                $btn_next: $('.responsiveGallery-btn_next')
             });
         },
 

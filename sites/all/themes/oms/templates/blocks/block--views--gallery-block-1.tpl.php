@@ -49,16 +49,15 @@
   <?php print render($title_suffix); ?>
 
     <div class="content"<?php print $content_attributes; ?>>
-
-        <section id="dg-container" class="dg-container">
-            <div class="dg-wrapper">
-              <?php print $content ?>
-            </div>
-            <nav>
-                <span class="dg-prev">&lt;</span>
-                <span class="dg-next">&gt;</span>
-            </nav
-        </section>
+        <div class="w-gallery">
+            <section id="responsiveGallery-container" class="responsiveGallery-container">
+                <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a>
+                <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+                <ul class="responsiveGallery-wrapper">
+                  <?php print $content ?>
+                </ul>
+            </section>
+        </div>
     </div>
 
 </div> <!-- /.block -->

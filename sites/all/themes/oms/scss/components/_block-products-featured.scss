@@ -1,9 +1,39 @@
 .products-featured{
+  margin-top: 20px;
   .views-field-title{
     a{
       text-align: center;
       padding: 10px 0px;
       display: block;
     }
+  }
+  .row-content{
+    border: 1px solid $bg_8;
+  }
+
+  .slick-next{
+    right: 15px;
+    &:before{
+      content: "\f105";
+      font: normal normal normal 50px/1 FontAwesome;
+      color: $text_gray;
+    }
+  }
+  .slick-prev{
+    left: 15px;
+    &:before{
+      content: "\f104";
+      font: normal normal normal 50px/1 FontAwesome;
+      color: $text_gray;
+    }
+  }
+  .slick-next,.slick-prev{
+    display: inline-block;
+    font: normal normal normal 50px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    z-index: 2;
   }
 }

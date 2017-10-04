@@ -2,16 +2,11 @@ name = OMS
 description = OMS is a premium Drupal 7 theme. Developed by <a href="http://www.oms.vn">oms.vn</a>.
 core = 7.x
 engine = phptemplate
-stylesheets[all][] = css/bootstrap-3.3.7/css/bootstrap.min.css
 stylesheets[all][] = fronts/font-awesome-4.7.0/css/font-awesome.min.css
 stylesheets[all][] = color/colors.css
 stylesheets[all][] = js/pushy/css/pushy.css
-stylesheets[all][] = js/Responsive-3D/css/jquery-responsiveGallery.css
 stylesheets[all][] = css/style.css
 
-scripts[] = css/bootstrap-3.3.7/js/bootstrap.js
-scripts[] = js/Responsive-3D/lib/modernizr.custom.js
-scripts[] = js/Responsive-3D/src/jquery.responsiveGallery.js
 scripts[] = js/scripts.js
 
 regions[sidebar_first]  = Sidebar left

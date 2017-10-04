@@ -55,16 +55,42 @@
     }
   }
   .row-content{
-    border: 1px solid $bg_7;
+    border: 1px solid $text_gray_light;
     display: block;
     height: 100%;
+    &:hover{
+      cursor: pointer;
+      img{
+        -webkit-filter: brightness(0.8);
+        filter: brightness(0.8);
+      }
+    }
   }
 }
 @include bp(max-width,$bp-tablet){
   .category-list{
 
     .views-row{
+      .image-group{
+        margin-bottom: 10px;
+        position: relative;
+        .views-field-title{
+          top: 0px;
+          padding-left: 5px;
+          a{
+            h3{
+              font-size: 18px;
+              color: $text-white;
+            }
+          }
+        }
+        .views-field-view-node{
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        }
 
+      }
       .views-field-name{
         width: auto;
         padding-right: 10px;

@@ -1,0 +1,37 @@
+.gallery-slider-front{
+  .views-row{
+    .row-content{
+      display: block;
+      position: relative;
+      margin-bottom: 15px;
+      .views-field-title{
+        background-color: $bg_7;
+        bottom: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+        transition: height 1s ease 0s;
+        width: 100%;
+        .field-content{
+          line-height: 50px;
+          font-weight: bold;
+          color: $text_white;
+        }
+      }
+      &:hover{
+
+        .views-field-title{
+          display: block;
+          height: 50px;
+          transition: height 1s ease 0s;
+        }
+        img{
+          -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+}

@@ -8,7 +8,7 @@
     </div>
   </div>
     <div class="hotline-mobile hidden-md hidden-lg">
-        <span><?php echo t('CÔNG TY CỔ PHẦN HÓA SINH VIỆT NAM')?></span>
+        <span><?php echo t('CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ CHO THUÊ GIÁ RẺ')?></span>
     </div>
   <div id="header">
     <div class="container">

@@ -27,12 +27,12 @@ body { background-color:#f2f4f4; }
 
 a { color: #000000; }
 
-a:hover { color: #164d81; }
+a:hover { color: #00af50; }
 
-.links li a:hover, .field-name-field-tags a:hover { color: #164d81; }
+.links li a:hover, .field-name-field-tags a:hover { color: #00af50; }
 
 /* Button */
 
 .form-submit { background: #164d81; border-color:#164d81; }
 
-.form-submit:hover { background: #f2f4f4; }
+.form-submit:hover { background: #00af50; }

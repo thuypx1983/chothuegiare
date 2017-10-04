@@ -102,7 +102,7 @@
     span.icon-bar{
       display: block;
       height: 4px;
-      background-color: $bg_4;
+      background-color: $bg_7;
       width: 30px;
       margin-bottom: 8px;
       border-radius: 2px;
@@ -114,7 +114,7 @@
     font-size: 28px;
     line-height: 28px;
     margin-right: 15px;
-    color: $bg_4;
+    color: $bg_7;
   }
   .mobile-header{
     display: table;
@@ -139,47 +139,64 @@
     justify-content: left;
     align-items: left;
     img{
-      max-height: 68px;
+      max-height: 50px;
     }
   }
-
-  #main-menu>ul.menu{
-    padding-left: 0px;
-    &>li{
-      display: block;
-      float: none !important;
+  #navigation{
+    #main-menu>ul.menu{
       padding-left: 0px;
-      border-bottom: 1px solid $text_gray;
-      a{
-        color: #ffffff !important;
-        display: inline-block !important;
-      }
-      ul{
-        padding-left: 10px;
-        li{
-          a{
-            font-size: 20px;
-            color: #ffffff;
-            padding-top: 5px;
-            padding-bottom: 5px;
+      &>li{
+        display: block;
+        float: none !important;
+        padding-left: 20px;
+
+        border-bottom: 1px solid $text_gray;
+        a{
+          padding-bottom: 15px;
+          padding-top: 15px;
+          color: #ffffff !important;
+          display: inline-block !important;
+          font-size: 17px;
+          &:after{
+            display: none;
+          }
+          &.active-trail{
+            background-color: transparent;
           }
         }
-      }
-      &.expanded{
-        position: relative;
-        .fa{
-          display: inline-block;
-          position: absolute;
-          right: 15px;
-          font-size: 30px;
-          top: 25px;
-        }
         ul{
-          display: none;
+          padding-left: 10px;
+          li{
+            a{
+              font-size: 20px;
+              color: #ffffff;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+          }
         }
-        &.open{
+        &.expanded{
+          position: relative;
+          .fa{
+            display: inline-block;
+            position: absolute;
+            right: 19px;
+            font-size: 16px;
+            top: 20px;
+            color: $text_white;
+          }
           ul{
-            display: block;
+            display: none;
+            li{
+              a{
+                font-size: 15px;
+              }
+            }
+          }
+          &.open{
+            ul{
+              display: block;
+            }
           }
         }
       }

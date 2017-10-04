@@ -10,6 +10,7 @@
 @import "global/general";
 @import "global/header";
 @import "global/body";
+@import "global/grid";
 @import "global/footer";
 
 /*components*/
@@ -32,6 +33,7 @@
 @import "components/pager";
 @import "components/block-button-call";
 @import "components/block-products-featured";
+@import "components/block-gallery-slider-front";
 
 /*page*/
 @import "pages/page-home";

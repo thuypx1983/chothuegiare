@@ -57,6 +57,19 @@
                 slidesToScroll: 4,
                 autoplay: true,
                 autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                        }
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             })
             $('.gallery-slider .view-content').slick({
                 infinite: true,
@@ -65,11 +78,6 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             })
-            $('.responsiveGallery-wrapper').responsiveGallery({
-                animatDuration: 400,
-                $btn_prev: $('.responsiveGallery-btn_prev'),
-                $btn_next: $('.responsiveGallery-btn_next')
-            });
         },
 
         autoHeight:function(){
@@ -125,7 +133,7 @@
             return false;
         },
         menuExpand:function(){
-            $('#main-menu').find('li.expanded ul.menu').before('<i class="fa fa-angle-down"></i>');
+            $('#main-menu').find('li.expanded ul.menu').before('<i class="fa fa-plus"></i>');
             $(document).on('click','#main-menu .fa',function () {
 
                 $(this).parent().toggleClass('open');

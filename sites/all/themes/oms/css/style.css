@@ -106,7 +106,8 @@ body.not-front {
     height: 100%; }
     #header .pull-left #logo {
       height: 100%;
-      display: block; }
+      display: block;
+      max-width: 200px; }
       #header .pull-left #logo a {
         height: 100%;
         display: flex;
@@ -117,7 +118,12 @@ body.not-front {
         align-items: center;
         /* for vertical alignment */ }
         #header .pull-left #logo a img {
-          max-height: 100%; }
+          max-height: 100%;
+          max-height: 55px; }
+        #header .pull-left #logo a .slogan {
+          display: block;
+          font-weight: bold;
+          color: #ED443D; }
 
 @media only screen and (max-width: 767px) {
   #header {

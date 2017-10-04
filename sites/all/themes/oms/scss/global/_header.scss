@@ -15,6 +15,7 @@
     #logo{
       height: 100%;
       display: block;
+      max-width:200px;
       a{
         height: 100%;
         display: flex;
@@ -23,6 +24,13 @@
         align-items: center; /* for vertical alignment */
         img{
           max-height: 100%;
+          max-height: 55px;
+
+        }
+        .slogan{
+          display: block;
+          font-weight: bold;
+          color: $text_red;
         }
       }
     }

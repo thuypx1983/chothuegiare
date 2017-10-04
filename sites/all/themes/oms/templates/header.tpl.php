@@ -17,7 +17,11 @@
         <?php if ($logo): ?>
           <div id="logo" class="">
 
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                <span class="slogan">Vươn tới dịch vụ hoàn hảo</span>
+            </a>
+
           </div>
         <?php endif; ?>
           <div class="mobile-menu hidden-lg hidden-md ">

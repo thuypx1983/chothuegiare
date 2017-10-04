@@ -65,6 +65,9 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             })
+            $('#dg-container').gallery({
+                autoplay	:	true
+            });
         },
 
         autoHeight:function(){

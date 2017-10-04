@@ -91,23 +91,7 @@
       <?php endif; ?>
         <div class="home-highlight-box">
             <div class="container home-highlight-box3 technical remove-margin">
-                <div class="title">
-                    <span>Góc kỹ thuật</span>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column1']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column2']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column3']); ?>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
-                      <?php print render($page['home_high3_column4']); ?>
-                    </div>
-                </div>
+              <?php print render($page['home_high3']); ?>
             </div>
         </div>
     </div>

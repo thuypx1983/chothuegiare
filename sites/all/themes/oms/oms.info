@@ -4,10 +4,14 @@ core = 7.x
 engine = phptemplate
 stylesheets[all][] = css/bootstrap-3.3.7/css/bootstrap.min.css
 stylesheets[all][] = fronts/font-awesome-4.7.0/css/font-awesome.min.css
-stylesheets[all][] = css/style.css
 stylesheets[all][] = color/colors.css
 stylesheets[all][] = js/pushy/css/pushy.css
+stylesheets[all][] = js/3DGallery/css/style1.css
+stylesheets[all][] = css/style.css
+
 scripts[] = css/bootstrap-3.3.7/js/bootstrap.js
+scripts[] = js/3DGallery/js/modernizr.custom.53451.js
+scripts[] = js/3DGallery/js/jquery.gallery.js
 scripts[] = js/scripts.js
 
 regions[sidebar_first]  = Sidebar left
@@ -17,10 +21,7 @@ regions[header]         = Header
 regions[home_banner]     = Home Banner
 regions[home_high1]     = Home Highlight 1
 regions[home_high2]     = Home Highlight 2
-regions[home_high3_column1]     = home_high3_column1
-regions[home_high3_column2]     = home_high3_column2
-regions[home_high3_column3]     = home_high3_column3
-regions[home_high3_column4]     = home_high3_column4
+regions[home_high3]     = home_high3
 regions[content_top]    = Content Top
 regions[content]        = Content
 regions[banner_top_content]        = banner_top_content

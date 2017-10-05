@@ -9,6 +9,9 @@
 <?php print $styles; ?>
 <!--[if lt IE 9]><script src="<?php print base_path() . drupal_get_path('theme', 'oms') . '/js/html5.js'; ?>"></script><![endif]-->
 <?php print $scripts; ?>
+<style type="text/css">
+    <?php echo file_get_contents(DRUPAL_ROOT.'/sites/all/themes/oms/css/style-inline.css');?>
+</style>
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print $page_top; ?>

@@ -6,21 +6,6 @@
 /* Mixin */
 @import "mixin";
 
-/*global*/
-@import "global/grid";
-@import "global/general";
-@import "global/header";
-@import "global/body";
-@import "global/footer";
-
-/*components*/
-@import "components/main-menu";
-@import "components/block-menu-top";
-@import "components/block-hotline-top";
-@import "components/block-search";
-@import "components/block-breadcrumb";
-@import "components/main-banner";
-@import "components/_block-front-product-catgories";
 @import "components/_block-front-news";
 @import "components/block-front-videos";
 @import "components/block-front-technical";
@@ -37,13 +22,5 @@
 @import "components/block-products-featured";
 @import "components/block-gallery-slider-front";
 
-/*page*/
-@import "pages/page-home";
-@import "pages/page-product-list";
-@import "pages/page-news";
-@import "pages/page-news-detail";
-@import "pages/page-product-detail";
-@import "pages/page-technical-list";
-@import "pages/page_jobs";
-@import "pages/page-videos";
-@import "pages/page-technical-detail";
+
+@import "global/footer";

@@ -7,10 +7,10 @@
 @import "mixin";
 
 /*global*/
+@import "global/grid";
 @import "global/general";
 @import "global/header";
 @import "global/body";
-@import "global/grid";
 @import "global/footer";
 
 /*components*/
@@ -44,3 +44,4 @@
 @import "pages/page-technical-list";
 @import "pages/page_jobs";
 @import "pages/page-videos";
+@import "pages/page-technical-detail";

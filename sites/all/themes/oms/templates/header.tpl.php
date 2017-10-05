@@ -33,7 +33,7 @@
                       <span class="icon-bar"></span>
                   </div>
                   <div class="search-icon">
-                      <span class="glyphicon glyphicon-search"></span>
+                      <span class="fa fa-search"></span>
                   </div>
               </div>
 

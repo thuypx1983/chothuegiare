@@ -1,0 +1,34 @@
+.node-type-technical{
+  .btn-send-request{
+    a{
+      padding: 15px 30px;
+      background-color: $bg_2;
+      color: $text_white;
+      display: inline-block;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+  .box-chinh-sach{
+    background-color: $bg_9;
+    padding: 1px 10px ;
+    margin-bottom: 15px;
+    p{
+      color: $text_white;
+    };
+  }
+  .field-name-field-summary1{
+    padding-left: 10px;
+  }
+  h1.content-title{
+    padding-left: 10px;
+  }
+  .field-name-field-image{
+    text-align: center;
+    img{
+    }
+  }
+  .group-tab{
+    margin-top: 15px;
+  }
+}

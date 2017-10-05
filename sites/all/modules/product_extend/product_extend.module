@@ -12,10 +12,45 @@ function product_extend_node_view($node, $view_mode, $langcode) {
         'node' => null)),
       '#attributes' => array('class' => array('social-buttons')),
     );
+    $node->content['facebook_comment'] = array(
+      '#type' => 'item',
+      '#title' => '',
+      '#markup' =>  '<div class="fb-comments" data-width="100%" data-numposts="5"></div>',
+      '#attributes' => array('class' => array('comments')),
+    );
     switch ($node->type) {
+        case 'technical':
+            $node->content['news_title'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<h1 class="content-title">'.$node->title.'</h1>',
+                '#attributes' => array('class' => array('news-title')),
+            );
+            $node->content['created'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<span class="created">'.format_date($node->created).'</span>',
+                '#attributes' => array('class' => array('created')),
+            );
+            $node->content['btn_send_request'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<span class="btn-send-request"><a class="ctools-use-modal" href="/modal_forms/nojs/webform/525">'.t('Đặt thuê thiết bị').'</a></span>',
+                '#attributes' => array('class' => array('btn-send-request')),
+            );
+            $block = block_load('block', 7);
+            $block=_block_get_renderable_array(_block_render_blocks(array($block)));
+            $output = drupal_render($block);
 
+            $node->content['block_design_process'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<div class="div-design-process">'.$output.'</div>',
+                '#attributes' => array('class' => array('btn-send-request')),
+            );
+            //
+            break;
       case 'video':
-      case 'technical':
       case 'job':
       case 'article':
         $node->content['news_title'] = array(
@@ -100,23 +135,38 @@ function product_extend_field_extra_fields() {
   );
 
 
-  $extra['node']['technical']['display'] = array(
-    'news_title' => array(
-      'label' => t('Title'),
-      'description' => t('Title.'),
-      'weight' => 1,
-    ),
-    'created' => array(
-      'label' => t('Created date'),
-      'description' => t('created date.'),
-      'weight' => 1,
-    ) ,
-    'social_buttons' => array(
-      'label' => t('social_buttons'),
-      'description' => t('social_buttons'),
-      'weight' => 1,
-    )
-  );
+    $extra['node']['technical']['display'] = array(
+        'news_title' => array(
+            'label' => t('Title'),
+            'description' => t('Title.'),
+            'weight' => 1,
+        ),
+        'created' => array(
+            'label' => t('Created date'),
+            'description' => t('created date.'),
+            'weight' => 1,
+        ) ,
+        'social_buttons' => array(
+            'label' => t('social_buttons'),
+            'description' => t('social_buttons'),
+            'weight' => 1,
+        ),
+        'btn_send_request' => array(
+            'label' => t('Button sent request'),
+            'description' => t('Button sent request for buying a set product'),
+            'weight' => 1,
+        ),
+        'block_design_process' => array(
+            'label' => t('Design processing'),
+            'description' => t('Design processing'),
+            'weight' => 1,
+        ),
+        'facebook_comment' => array(
+            'label' => t('Facebook comment'),
+            'description' => t('Facebook comment'),
+            'weight' => 1,
+        )
+    );
   $extra['node']['video']['display'] = array(
     'news_title' => array(
       'label' => t('Title'),

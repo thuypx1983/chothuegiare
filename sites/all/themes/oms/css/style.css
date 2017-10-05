@@ -1084,7 +1084,7 @@ img {
           padding-bottom: 5px; }
       #navigation #main-menu > ul.menu > li.expanded {
         position: relative; }
-        #navigation #main-menu > ul.menu > li.expanded .fa {
+        #navigation #main-menu > ul.menu > li.expanded > .fa {
           display: inline-block;
           position: absolute;
           right: 19px;

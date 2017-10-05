@@ -12,11 +12,12 @@
 <style type="text/css">
     <?php echo file_get_contents(DRUPAL_ROOT.'/sites/all/themes/oms/css/style-inline.css');?>
 </style>
+
+  <?php print $styles; ?>
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print $page_top; ?>
   <?php print $page; ?>
-  <?php print $styles; ?>
   <?php print $page_bottom; ?>
 
 

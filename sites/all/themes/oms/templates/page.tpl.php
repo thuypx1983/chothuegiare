@@ -70,11 +70,6 @@
   include(drupal_get_path('theme', 'oms').'/templates/header.tpl.php');
   ?>
     <div id="main">
-        <div class="page-title">
-            <div class="container">
-                <h1 class="title"><?php echo $title?></h1>
-            </div>
-        </div>
         <div class="container">
             <div class="content-header">
               <?php if (theme_get_setting('breadcrumbs')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>

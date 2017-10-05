@@ -1,6 +1,7 @@
 #navigation{
   #main-menu>ul.menu{
     display: block;
+    margin: 0px;
     &>li{
       list-style: none;
       display: block;
@@ -8,13 +9,18 @@
       padding: 0px 0px 0px 30px;
       margin: 0px;
       position: relative;
+      .fa{
+        display: none;
+      }
       a{
         font-size: 18px;
         padding:25px 0px;
         display: block;
         position: relative;
-        color: $bg_4;
-
+        color: $text_white;
+        .fa{
+          display: inline-block;
+        }
         &.active{
           background: transparent;
           color: $text_red;
@@ -44,12 +50,9 @@
         }
 
       }
-
     }
   }
-  .fa{
-    display: none;
-  }
+
 }
 
 
@@ -68,7 +71,7 @@
       top: calc(100% - 3px);
       left: 0px;
       z-index: 9999;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: $bg_9;
       padding-left: 0px;
       padding-bottom: 10px;
       li{

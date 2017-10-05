@@ -46,10 +46,10 @@
             })
             $('.related-products .view-content').slick({
                 infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
+                slidesToShow: 6,
+                slidesToScroll: 3,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 5000,
             })
             $('.products-featured .view-content').slick({
                 infinite: true,
@@ -71,19 +71,12 @@
                     // instead of a settings object
                 ]
             })
-            $('.gallery-slider .view-content').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            })
         },
 
         autoHeight:function(){
             STNScript.equalHeight('.category-list .views-row');
             STNScript.equalHeight('.view-id-product_list .views-row');
-            STNScript.equalHeight('.view-technical-list .views-row');
+            STNScript.equalHeight('.view-goi-dich-vu .views-row');
             STNScript.equalHeight('.home-highlight-box3 .row>.col-md-3');
             STNScript.equalHeight('.view-news.view-display-id-page_2 .view-news .views-row,.view-news.view-display-id-page_1 .view-news .views-row');
         },
@@ -119,13 +112,7 @@
                 $("#edit-search-block-form--2").focus();
             })
         },
-        moveSlideBarToBottom:function () {
-            $('#main>.container>.row>.col-md-3').insertAfter('#main>.container>.row>.col-md-9')
-        },
-        moveSlideBarToTop:function () {
-            $('#main>.container>.row>.col-md-3').insertBefore('#main>.container>.row>.col-md-9')
-        },
-        isMobile:function () {
+         isMobile:function () {
             var w=$(window).width();
             if(w<=990){
                 return true;
@@ -161,20 +148,10 @@
     })
     $(window).on('load',function(){
         STNScript.autoHeight();
-        if(STNScript.isMobile()){
-            STNScript.moveSlideBarToBottom();
-        }else{
-
-            STNScript.moveSlideBarToTop();
-        }
 
         $(window).resize(function () {
             STNScript.autoHeight();
-            if(STNScript.isMobile()){
-                STNScript.moveSlideBarToBottom();
-            }else{
-                STNScript.moveSlideBarToTop();
-            }
+
         })
     })
 })(jQuery)

@@ -1,29 +1,113 @@
 
-.block-system{
-  .view-technical-list{
-    text-align: center;
-    .views-row{
-      margin-bottom: 20px;
+.block-system .view-goi-dich-vu{
+  padding-top: 35px;
+  .views-row{
+    margin-bottom: 30px;
+    .image-group{
+      margin-bottom: 10px;
+      position: relative;
       .views-field-title{
-        padding-bottom: 5px;
-        padding-top: 20px;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px;
         a{
-          font-size: 18px;
-        }
-      }
-      .views-field-field-image{
-        padding: 5px 20px;
-        a{
-          img{
-            max-height: 100%;
-            display: block;
-            box-sizing:border-box;
+          h3{
+            font-size: 24px;
+            color: $text-white;
+            margin: 0px;
+            text-align: left;
           }
         }
+      }
+      .views-field-view-node{
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        a{
+          background-color: $text_white;
+          padding: 5px 25px 5px 5px;
+          font-size: 11px;
+          display: block;
+          position: relative;
+          &::after{
+            display: block;
+            content: "\00bb";
+            position: absolute;
+            right: 0px;
+            padding: 2px 6px;
+            background-color: $bg_2;
+            color: $text_white;
+            top: 0px;
+            font-size: 15px;
+          }
+        }
+
+
+      }
+
+      .views-field-field-image{
+        img{
+          -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+        }
+      }
+    }
+    .views-field-field-summary1{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .row-content{
+    border: 1px solid $text_gray_light;
+    display: block;
+    height: 100%;
+    &:hover{
+      cursor: pointer;
+      img{
+        -webkit-filter: brightness(0.8);
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
+@include bp(max-width,$bp-tablet){
+  .block-system .view-goi-dich-vu{
+
+    .views-row{
+      .image-group{
+        margin-bottom: 10px;
+        position: relative;
+        .views-field-title{
+          top: 0px;
+          padding-left: 5px;
+          a{
+            h3{
+              font-size: 15px;
+              color: $text-white;
+              margin: 0px;
+            }
+          }
+        }
+        .views-field-view-node{
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        }
+
+      }
+      .views-field-name{
+        width: auto;
+        padding-right: 10px;
+        font-size: 20px;
+      }
+      .views-field-name-1{
+
 
       }
     }
   }
-
-
 }

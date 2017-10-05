@@ -1,12 +1,12 @@
 
 #header-top{
-  background-color: $bg_1;
+  background-color: $bg_8;
   padding-top: 10px;
   padding-bottom: 10px;
 
 }
 #header{
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: $bg_9;
   position: relative;
   z-index: 9;
   .pull-left{
@@ -30,7 +30,7 @@
         .slogan{
           display: block;
           font-weight: bold;
-          color: $text_red;
+          color: $text_white;
         }
       }
     }

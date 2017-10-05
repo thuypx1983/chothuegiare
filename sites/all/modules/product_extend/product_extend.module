@@ -19,6 +19,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
       '#attributes' => array('class' => array('comments')),
     );
     switch ($node->type) {
+        case 'product':
         case 'technical':
             $node->content['news_title'] = array(
                 '#type' => 'item',
@@ -66,14 +67,6 @@ function product_extend_node_view($node, $view_mode, $langcode) {
           '#attributes' => array('class' => array('created')),
         );
         break;
-      case 'product':
-        $node->content['product_title'] = array(
-          '#type' => 'item',
-          '#title' => '',
-          '#markup' =>  '<h1 class="product-title">'.$node->title.'</h1>',
-          '#attributes' => array('class' => array('product-title')),
-        );
-        break;
       default:
         break;
     }
@@ -85,18 +78,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
  * Declare our Facebook Like button as a pseudo-field.
  */
 function product_extend_field_extra_fields() {
-    $extra['node']['product']['display'] = array(
-        'product_title' => array(
-            'label' => t('Title'),
-            'description' => t('Title.'),
-            'weight' => 1,
-        ),
-        'social_buttons' => array(
-          'label' => t('social_buttons'),
-          'description' => t('social_buttons'),
-          'weight' => 1,
-        )
-    );
+
     $extra['node']['article']['display'] = array(
       'news_title' => array(
         'label' => t('Title'),
@@ -111,6 +93,11 @@ function product_extend_field_extra_fields() {
       'social_buttons' => array(
         'label' => t('social_buttons'),
         'description' => t('social_buttons'),
+        'weight' => 1,
+      ),
+      'facebook_comment' => array(
+        'label' => t('Facebook comment'),
+        'description' => t('Facebook comment'),
         'weight' => 1,
       )
     );
@@ -131,11 +118,48 @@ function product_extend_field_extra_fields() {
       'label' => t('social_buttons'),
       'description' => t('social_buttons'),
       'weight' => 1,
+    ),
+    'facebook_comment' => array(
+      'label' => t('Facebook comment'),
+      'description' => t('Facebook comment'),
+      'weight' => 1,
     )
   );
 
 
     $extra['node']['technical']['display'] = array(
+        'news_title' => array(
+            'label' => t('Title'),
+            'description' => t('Title.'),
+            'weight' => 1,
+        ),
+        'created' => array(
+            'label' => t('Created date'),
+            'description' => t('created date.'),
+            'weight' => 1,
+        ) ,
+        'social_buttons' => array(
+            'label' => t('social_buttons'),
+            'description' => t('social_buttons'),
+            'weight' => 1,
+        ),
+        'btn_send_request' => array(
+            'label' => t('Button sent request'),
+            'description' => t('Button sent request for buying a set product'),
+            'weight' => 1,
+        ),
+        'block_design_process' => array(
+            'label' => t('Design processing'),
+            'description' => t('Design processing'),
+            'weight' => 1,
+        ),
+        'facebook_comment' => array(
+            'label' => t('Facebook comment'),
+            'description' => t('Facebook comment'),
+            'weight' => 1,
+        )
+    );
+    $extra['node']['product']['display'] = array(
         'news_title' => array(
             'label' => t('Title'),
             'description' => t('Title.'),
@@ -181,6 +205,11 @@ function product_extend_field_extra_fields() {
     'social_buttons' => array(
       'label' => t('social_buttons'),
       'description' => t('social_buttons'),
+      'weight' => 1,
+    ),
+    'facebook_comment' => array(
+      'label' => t('Facebook comment'),
+      'description' => t('Facebook comment'),
       'weight' => 1,
     )
   );

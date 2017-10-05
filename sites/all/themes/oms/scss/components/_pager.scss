@@ -9,3 +9,15 @@
     padding-right: 10px;
   }
 }
+.pager-load-more.pager{
+   li{
+     a{
+       text-transform: uppercase;
+       padding: 10px 30px;
+       background-color: $text_red;
+       font-weight: bold;
+       color:$text_white;
+       font-size: 15px;
+     }
+  }
+}

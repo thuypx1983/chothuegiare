@@ -23,7 +23,7 @@
         }
         &.active{
           background: transparent;
-          color: $text_red;
+          color: $text_white;
           &:after{
             position: absolute;
             content: "";
@@ -36,7 +36,7 @@
         }
         &:hover{
           background: transparent;
-          color:$text_red;
+          color:$text_white;
           text-decoration: none;
           &:after{
             position: absolute;
@@ -48,7 +48,9 @@
             left:0px;
           }
         }
-
+        &.active-trail{
+          background-color: transparent;
+        }
       }
     }
   }
@@ -83,6 +85,18 @@
             display: none;
             font-size: 20px;
           }
+        }
+      }
+    }
+
+    &.expanded.mega-3{
+      ul.menu{
+        width: 600px;
+        left: -200px;
+        max-height: 200px;
+        li{
+          float: left;
+          width: 33.3333%;
         }
       }
     }
@@ -163,9 +177,7 @@
           &:after{
             display: none;
           }
-          &.active-trail{
-            background-color: transparent;
-          }
+
         }
         ul{
           padding-left: 10px;

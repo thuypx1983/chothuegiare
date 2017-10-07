@@ -29,8 +29,10 @@
         }
         .slogan{
           display: block;
+          width: 100%;
           font-weight: bold;
           color: $text_white;
+          text-align: center;
         }
       }
     }
@@ -46,7 +48,11 @@
       position: inherit;
       float: none !important;
       #logo{
-
+        a{
+          .slogan{
+            text-align: left;
+          }
+        }
       }
     }
   }

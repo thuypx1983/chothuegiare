@@ -7,6 +7,10 @@ stylesheets[all][] = color/colors.css
 stylesheets[all][] = js/pushy/css/pushy.css
 stylesheets[all][] = css/style.css
 
+scripts[] = js/CSSMaskTransition/js/modernizr-custom.js
+scripts[] = js/CSSMaskTransition/js/zepto.min.js
+scripts[] = js/CSSMaskTransition/js/imagesloaded.pkgd.min.js
+scripts[] = js/CSSMaskTransition/js/demo.js
 scripts[] = js/scripts.js
 
 regions[sidebar_first]  = Sidebar left

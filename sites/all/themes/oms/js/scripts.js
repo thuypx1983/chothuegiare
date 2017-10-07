@@ -34,11 +34,11 @@
         //
         initSlick:function(){
 
-            $('.banner-home .view-banner .view-content').slick({
+           /* $('.banner-home .view-banner .view-content').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
                 arrows: false,
-            })
+            })*/
             $('.banner-second .view-banner .view-content').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,

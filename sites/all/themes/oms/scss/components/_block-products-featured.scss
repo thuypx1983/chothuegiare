@@ -9,6 +9,17 @@
   }
   .row-content{
     border: 1px solid $bg_8;
+    .views-field-field-image{
+      .field-content{
+        text-align: center;
+        img{
+          max-width: 60%;
+          display: inline-block;
+          margin-top: 15px;
+        }
+
+      }
+    }
   }
 
   .slick-next{

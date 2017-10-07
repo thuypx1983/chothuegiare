@@ -1,5 +1,9 @@
 /* Mixin style */
-
+@mixin  boxshadow(){
+    -webkit-box-shadow: 4px 4px 9px -3px rgba(122,122,122,0.9);
+    -moz-box-shadow: 4px 4px 9px -3px rgba(122,122,122,0.9);
+    box-shadow: 4px 4px 9px -3px rgba(122,122,122,0.9);
+}
 /* animation */
 @mixin animation($value) {
     -webkit-animation: $value;

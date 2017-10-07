@@ -1,23 +1,24 @@
 .news-font{
   .views-row{
-    .views-field-body{
-      display: none;
+    display: table;
+    width: 100%;
+    .views-field-field-image{
+      margin-right: 10px;
+      float: left;
+      img{
+        width: 80px;
+      }
     }
-    display: block;
     a{
-      display: block;
-      padding: 10px 0px 10px 15px;
-      color: $text_black;
-      font-weight: bold;
-      font-size: 14px;
-
+      display: block
+/*
       position: relative;
       &:after{
         content: "\2022";
         position: absolute;
         left: 0px;
         color: $text_black;
-      }
+      }*/
     }
     &:last-child{
       a{

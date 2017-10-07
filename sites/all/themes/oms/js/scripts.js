@@ -74,6 +74,7 @@
         },
 
         autoHeight:function(){
+            STNScript.equalHeight('.view-product-list>.view-content .views-row');
             STNScript.equalHeight('.category-list .views-row');
             STNScript.equalHeight('.view-id-product_list .views-row');
             STNScript.equalHeight('.view-goi-dich-vu .views-row');

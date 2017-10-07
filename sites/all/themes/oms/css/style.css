@@ -15,21 +15,15 @@
 /* breakpoint with one condition(min or max) */
 /* breakpoint with two conditions (min and max) */
 .news-font .views-row {
-  display: block; }
-  .news-font .views-row .views-field-body {
-    display: none; }
+  display: table;
+  width: 100%; }
+  .news-font .views-row .views-field-field-image {
+    margin-right: 10px;
+    float: left; }
+    .news-font .views-row .views-field-field-image img {
+      width: 80px; }
   .news-font .views-row a {
-    display: block;
-    padding: 10px 0px 10px 15px;
-    color: #000;
-    font-weight: bold;
-    font-size: 14px;
-    position: relative; }
-    .news-font .views-row a:after {
-      content: "\2022";
-      position: absolute;
-      left: 0px;
-      color: #000; }
+    display: block; }
   .news-font .views-row:last-child a {
     border-bottom: none; }
 
@@ -269,6 +263,12 @@
     display: block; }
   .products-featured .row-content {
     border: 1px solid #f4f4f4; }
+    .products-featured .row-content .views-field-field-image .field-content {
+      text-align: center; }
+      .products-featured .row-content .views-field-field-image .field-content img {
+        max-width: 60%;
+        display: inline-block;
+        margin-top: 15px; }
   .products-featured .slick-next {
     right: 25px; }
     .products-featured .slick-next:before {

@@ -36,7 +36,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
             $node->content['btn_send_request'] = array(
                 '#type' => 'item',
                 '#title' => '',
-                '#markup' =>  '<span class="btn-send-request"><a class="ctools-use-modal" href="/modal_forms/nojs/webform/525">'.t('Đặt thuê thiết bị').'</a></span>',
+                '#markup' =>  '<span class="btn-send-request"><a class="ctools-use-modal ctools-modal-modal-popup-medium" href="/modal_forms/nojs/webform/525">'.t('Đặt thuê thiết bị').'</a></span>',
                 '#attributes' => array('class' => array('btn-send-request')),
             );
             $block = block_load('block', 7);

@@ -1,0 +1,76 @@
+#modalContent{
+  .webform-client-form{
+    .webform-component--content{
+      display: table;
+      width: 100%;
+      .webform-component--content--left{
+        display: table-cell;
+        width: 50%;
+      }
+      .webform-component--content--right{
+        display: table-cell;
+        width: 50%;
+      }
+      .form-item {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        label{
+          margin-bottom: 5px;
+        }
+        input{
+          max-width: 100%;
+          width: 100%;
+          display: block;
+          padding: 5px 10px;
+        }
+      }
+    }
+    .form-actions{
+      display: block;
+      text-align: center;
+      input{
+        padding: 10px 30px;
+      }
+    }
+  }
+  .popups-title{
+    background-color: $bg_9;
+    padding-bottom: 5px;
+    .modal-title{
+      color: $text_white;
+      text-transform: uppercase;
+      padding-left: 10px;
+      line-height: 25px;
+    }
+  }
+}
+
+@include bp(max-width,$bp-tablet) {
+  #modalContent {
+    left: 0px !important;
+    max-width: 100%;
+    #modal-content{
+      max-width: 100%;
+    }
+    .modal-forms-modal-content{
+      max-width: 100%;
+
+    }
+    .webform-client-form {
+      .webform-component--content {
+        display: block;
+        width: 100%;
+        .webform-component--content--left {
+          display: block;
+          width: 100%;
+        }
+        .webform-component--content--right {
+          display: block;
+          width: 100%;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

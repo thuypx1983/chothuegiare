@@ -13,6 +13,8 @@
     <?php echo file_get_contents(DRUPAL_ROOT.'/sites/all/themes/oms/css/style-inline.css');?>
 </style>
 
+
+  <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print $page_top; ?>
@@ -20,7 +22,6 @@
 
   <?php print $styles; ?>
 
-  <?php print $scripts; ?>
   <?php print $page_bottom; ?>
 
 

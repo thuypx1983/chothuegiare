@@ -22,9 +22,10 @@
         flex-wrap: wrap; /* optional. only if you want the items to wrap */
         justify-content: center; /* for horizontal alignment */
         align-items: center; /* for vertical alignment */
+        text-align: left;
         img{
           max-height: 100%;
-          max-height: 55px;
+          max-height: 48px;
 
         }
         .slogan{
@@ -33,6 +34,7 @@
           font-weight: bold;
           color: $text_white;
           text-align: center;
+          font-size: 12px;
         }
       }
     }

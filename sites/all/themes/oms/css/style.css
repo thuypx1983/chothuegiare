@@ -340,6 +340,8 @@
   text-align: center; }
   #modalContent .webform-client-form .form-actions input {
     padding: 10px 30px; }
+#modalContent .modal-header {
+  background-color: #009900; }
 #modalContent .popups-title {
   background-color: #009900;
   padding-bottom: 5px; }

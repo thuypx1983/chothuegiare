@@ -100,3 +100,15 @@ img{
     padding-right: 5px;
   }
 }
+
+.views-field-field-image{
+  overflow: hidden;
+}
+
+.views-field-field-image img {
+  transition: all .2s ease-in-out;
+}
+
+.views-field-field-image:hover img {
+  transform: scale(1.15);
+}

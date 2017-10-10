@@ -1,0 +1,21 @@
+.partner-block{
+  .view-content{
+    .views-row{
+      width: 8.333333%;
+      float: left;
+      height: 80px;
+      .views-field-field-image{
+        display: block;
+        .field-content{
+          display: block;
+          height: 80px;
+
+          img{
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

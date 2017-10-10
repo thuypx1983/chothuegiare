@@ -387,6 +387,19 @@
       width: 100%;
       color: #fff; }
 
+.partner-block .view-content .views-row {
+  width: 8.333333%;
+  float: left;
+  height: 80px; }
+  .partner-block .view-content .views-row .views-field-field-image {
+    display: block; }
+    .partner-block .view-content .views-row .views-field-field-image .field-content {
+      display: block;
+      height: 80px; }
+      .partner-block .view-content .views-row .views-field-field-image .field-content img {
+        height: 100%;
+        width: 100%; }
+
 .footer-bottom {
   background-color: #00AF50;
   padding: 15px 0px; }

@@ -74,9 +74,7 @@
         },
 
         autoHeight:function(){
-            STNScript.equalHeight('.view-product-list>.view-content .views-row');
             STNScript.equalHeight('.category-list .views-row');
-            STNScript.equalHeight('.view-id-product_list .views-row');
             STNScript.equalHeight('.view-goi-dich-vu .views-row');
             STNScript.equalHeight('.home-highlight-box3 .row>.col-md-3');
             STNScript.equalHeight('.view-news.view-display-id-page_2 .view-news .views-row,.view-news.view-display-id-page_1 .view-news .views-row');

@@ -99,7 +99,17 @@
     <div class="content">
         <?php render($page['content']); ?>
     </div>
+    <?php
+        if($page['content_footer']){
+        ?>
+        <div class="content-footer">
+            <div class="container">
+              <?php print render($page['content_footer']);?>
+            </div>
+        </div>
+      <?php
 
+      }?>
   <?php
   include(drupal_get_path('theme', 'oms').'/templates/footer.tpl.php');
   ?>

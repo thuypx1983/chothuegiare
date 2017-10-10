@@ -9,7 +9,7 @@
 </footer>
 
 <!--pushy menu-->
-<div class="mobile-menu-container pushy pushy-right">
+<div class="mobile-menu-container pushy pushy-right hidden-lg hidden-md">
 </div>
 <div class="site-overlay"></div>
 <!--!pushy menu-->

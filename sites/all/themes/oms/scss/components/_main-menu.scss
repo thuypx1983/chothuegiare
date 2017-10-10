@@ -105,6 +105,19 @@
         }
       }
     }
+    &.expanded.mega-2{
+      ul.menu{
+        width: 460px;
+        left: -150px;
+        max-height: 200px;
+        li{
+          float: left;
+          width: 50%;
+          margin: 0px;
+          padding: 5px 20px;
+        }
+      }
+    }
   }
 
 }

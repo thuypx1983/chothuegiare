@@ -1,0 +1,22 @@
+.hotline-fixed-right{
+  position: fixed;
+  top: 150px;
+  right: 0px;
+  z-index: 1001;
+  background-color: rgba(255, 119, 3, 0.8);
+  padding: 10px;
+  .icon{
+    text-align: center;
+    color: $text_white;
+    font-size: 18px;
+  }
+  .numbers{
+
+    font-size: 18px;
+    span{
+      display: block;
+      width: 100%;
+      color: $text_white;
+    }
+  }
+}

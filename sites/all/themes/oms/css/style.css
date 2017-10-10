@@ -369,6 +369,24 @@
         display: block;
         width: 100%;
         margin-left: 0px; } }
+.hotline-fixed-right {
+  position: fixed;
+  top: 150px;
+  right: 0px;
+  z-index: 1001;
+  background-color: rgba(255, 119, 3, 0.8);
+  padding: 10px; }
+  .hotline-fixed-right .icon {
+    text-align: center;
+    color: #fff;
+    font-size: 18px; }
+  .hotline-fixed-right .numbers {
+    font-size: 18px; }
+    .hotline-fixed-right .numbers span {
+      display: block;
+      width: 100%;
+      color: #fff; }
+
 .footer-bottom {
   background-color: #00AF50;
   padding: 15px 0px; }

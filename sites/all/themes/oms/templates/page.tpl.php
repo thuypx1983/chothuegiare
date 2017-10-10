@@ -78,8 +78,13 @@
               <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
               <?php print render($page['help']); ?>
               <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-
-
+                <?php
+                $n=menu_get_object();
+                if (!$n) { ?>
+                    <h1><?php echo $title; ?></h1>
+                    <?php
+                }
+                ?>
             </div>
             <div class="row">
               <?php if ($page['sidebar_first']): ?>

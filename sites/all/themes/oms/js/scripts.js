@@ -132,7 +132,9 @@
 
     $(document).ready(function(){
         $('#block-search-form').prepend('<span class="btn-close">x</span>')
-
+        $( document).ajaxComplete(function () {
+            STNScript.autoHeight();
+        })
         STNScript.menuExpand();
         STNScript.initSlick();
         STNScript.detectStar();

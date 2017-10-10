@@ -6,12 +6,6 @@
       </div>
     </div>
   </div>
-
-  <div id="footer-bottom" class="footer-bottom">
-    <div class="container">
-      <?php print render($page['footer_bottom']) ?>
-    </div>
-  </div>
 </footer>
 
 <!--pushy menu-->

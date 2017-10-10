@@ -256,7 +256,8 @@ body.not-front {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #E1F4FC; }
+    background-color: #E1F4FC;
+  }
 
   .menu-btn {
     display: inline-block;

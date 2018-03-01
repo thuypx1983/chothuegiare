@@ -5,6 +5,7 @@
  * Adds a Facebook like button to page nodes.
  */
 function product_extend_node_view($node, $view_mode, $langcode) {
+    $x=1;
     $node->content['social_buttons'] = array(
       '#type' => 'item',
       '#title' => '',
@@ -78,7 +79,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
  * Declare our Facebook Like button as a pseudo-field.
  */
 function product_extend_field_extra_fields() {
-
+    $x=1;
     $extra['node']['article']['display'] = array(
       'news_title' => array(
         'label' => t('Title'),
@@ -191,7 +192,7 @@ function product_extend_field_extra_fields() {
             'weight' => 1,
         )
     );
-  $extra['node']['video']['display'] = array(
+    $extra['node']['video']['display'] = array(
     'news_title' => array(
       'label' => t('Title'),
       'description' => t('Title.'),

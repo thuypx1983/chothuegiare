@@ -768,9 +768,6 @@ body.html {
   font-size: 14px;
   line-height: 1.42857143; }
 
-a, p, span {
-  color: #000; }
-
 img {
   max-width: 100%;
   height: auto; }
@@ -825,22 +822,6 @@ img {
 .content-after {
   display: table; }
 
-.views-field-field-image {
-  overflow: hidden; }
-
-.views-field-field-image img {
-  transition: all .2s ease-in-out; }
-
-.views-field-field-image:hover img {
-  transform: scale(1.15); }
-
-.content-header h1 {
-  margin-bottom: 0px;
-  margin-top: 5px; }
-
-@media only screen and (min-width: 768px) {
-  .pushy {
-    display: none !important; } }
 @media only screen and (max-width: 767px) {
   .block .title {
     text-align: center;
@@ -887,18 +868,16 @@ img {
         justify-content: center;
         /* for horizontal alignment */
         align-items: center;
-        /* for vertical alignment */
-        text-align: left; }
+        /* for vertical alignment */ }
         #header .pull-left #logo a img {
           max-height: 100%;
-          max-height: 48px; }
+          max-height: 55px; }
         #header .pull-left #logo a .slogan {
           display: block;
           width: 100%;
           font-weight: bold;
           color: #fff;
-          text-align: center;
-          font-size: 12px; }
+          text-align: center; }
 
 @media only screen and (max-width: 767px) {
   #header {
@@ -929,7 +908,7 @@ img {
       display: none; }
     #navigation #main-menu > ul.menu > li a {
       font-size: 18px;
-      padding: 20px 0px;
+      padding: 25px 0px;
       display: block;
       position: relative;
       color: #fff; }
@@ -994,15 +973,6 @@ img {
       float: left;
       width: 33.3333%;
       margin: 0px;
-      padding: 5px 20px; }
-  #navigation #main-menu > ul.menu > li.expanded.mega-2 ul.menu {
-    width: 460px;
-    left: -150px;
-    max-height: 200px; }
-    #navigation #main-menu > ul.menu > li.expanded.mega-2 ul.menu li {
-      float: left;
-      width: 50%;
-      margin: 0px;
       padding: 5px 20px; } }
 @media only screen and (max-width: 767px) {
   #header {
@@ -1010,14 +980,12 @@ img {
 
   .hotline-mobile {
     text-align: center;
+    font-size: 13px;
+    color: #ED443D;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #f4f4f4;
-    font-weight: bold;
-    letter-spacing: -0.7px; }
-    .hotline-mobile span {
-      font-size: 13px;
-      color: #ED443D; }
+    background-color: #f4f4f4; }
 
   .menu-btn {
     display: inline-block;
@@ -1035,14 +1003,13 @@ img {
     float: right;
     font-size: 28px;
     line-height: 28px;
-    margin-right: 15px; }
-    .search-icon .fa {
-      color: #fff; }
+    margin-right: 15px;
+    color: #fff; }
 
   .mobile-header {
     display: table;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%; }
     .mobile-header #logo {
       display: table-cell !important;
@@ -1172,31 +1139,20 @@ img {
 
 @media only screen and (max-width: 767px) {
   #block-search-form {
-    position: fixed;
-    top: -200px;
-    height: 200px;
-    width: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
-    #block-search-form .content {
-      padding-top: 80px;
-      visibility: hidden; }
+    padding-top: 80px;
+    display: none; }
     #block-search-form.open-popup {
+      position: fixed;
       width: 100%;
+      height: 200px;
+      top: 0;
       left: 0px;
       z-index: 9999;
       background: #361919;
       /* Fall-back for browsers that don't
        support rgba */
-      -webkit-transform: translate3d(0, 200px, 0);
-      -ms-transform: translate3d(0, 200px, 0);
-      transform: translate3d(0, 200px, 0);
       background: rgba(0, 0, 0, 0.8);
       display: block; }
-      #block-search-form.open-popup .content {
-        visibility: visible; }
       #block-search-form.open-popup .btn-close {
         content: "X";
         width: 20px;
@@ -1354,8 +1310,6 @@ img {
   /*background-color: rgba(255,255,255,0.6);*/
   color: #fff;
   font-weight: bold; }
-  .demo-2 .page-view .text span {
-    color: white; }
 
 .demo-2 .page-view .project:nth-child(odd).hide {
   -webkit-mask: url(/sites/all/themes/oms/js/CSSMaskTransition/img/building-sprite.png);
@@ -1502,15 +1456,6 @@ img {
     width: auto;
     padding-right: 10px;
     font-size: 20px; } }
-.menu-top-left ul.menu {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  text-align: right; }
-  .menu-top-left ul.menu li {
-    list-style: none;
-    display: inline-block; }
-
 /*page*/
 .best-sell-product .title {
   font-size: 16px;
@@ -1543,26 +1488,25 @@ img {
     .best-sell-product .content .views-row .views-field-field-rate .star-active, .best-sell-product .content .views-row .field-name-field-rate .star-active {
       background: url("../images/star.png") no-repeat; }
 
-.view-id-product_list {
+.block-system .view-id-product_list {
   text-align: center; }
-  .view-id-product_list > .view-content .views-row {
+  .block-system .view-id-product_list > .view-content .views-row {
     margin-bottom: 20px; }
-    .view-id-product_list > .view-content .views-row .views-field-title {
+    .block-system .view-id-product_list > .view-content .views-row .views-field-title {
       padding-bottom: 5px;
-      padding-top: 20px;
-      height: 66px; }
-      .view-id-product_list > .view-content .views-row .views-field-title a {
+      padding-top: 20px; }
+      .block-system .view-id-product_list > .view-content .views-row .views-field-title a {
         font-size: 15px; }
-    .view-id-product_list > .view-content .views-row .views-field-field-image {
+    .block-system .view-id-product_list > .view-content .views-row .views-field-field-image {
       overflow: hidden;
       box-sizing: border-box;
       display: block; }
-      .view-id-product_list > .view-content .views-row .views-field-field-image a img {
+      .block-system .view-id-product_list > .view-content .views-row .views-field-field-image a img {
         max-height: 100%;
         max-width: 100%;
         display: block;
         box-sizing: border-box; }
-    .view-id-product_list > .view-content .views-row .row-container {
+    .block-system .view-id-product_list > .view-content .views-row .row-container {
       border: 1px solid #f4f4f4;
       padding: 5px;
       height: 100%;
@@ -1613,8 +1557,7 @@ h1.news-title {
   margin: 0px; }
 
 .block-system .view-goi-dich-vu {
-  padding-top: 35px;
-  display: table; }
+  padding-top: 35px; }
   .block-system .view-goi-dich-vu .views-row {
     margin-bottom: 30px; }
     .block-system .view-goi-dich-vu .views-row .image-group {

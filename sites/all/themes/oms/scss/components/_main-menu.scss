@@ -14,7 +14,7 @@
       }
       a{
         font-size: 18px;
-        padding:20px 0px;
+        padding:25px 0px;
         display: block;
         position: relative;
         color: $text_white;
@@ -96,23 +96,9 @@
       ul.menu{
         width: 700px;
         left: -250px;
-        max-height: 200px;
         li{
           float: left;
           width: 33.3333%;
-          margin: 0px;
-          padding: 5px 20px;
-        }
-      }
-    }
-    &.expanded.mega-2{
-      ul.menu{
-        width: 460px;
-        left: -150px;
-        max-height: 200px;
-        li{
-          float: left;
-          width: 50%;
           margin: 0px;
           padding: 5px 20px;
         }
@@ -127,17 +113,12 @@
   }
   .hotline-mobile{
     text-align: center;
-
+    font-size: 13px;
+    color: $text_red;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: $bg_8;
-    font-weight: bold;
-    letter-spacing: -0.7px;
-    span{
-      font-size: 13px;
-      color: $text_red;
-
-    }
   }
   .menu-btn{
     display: inline-block;
@@ -157,14 +138,12 @@
     font-size: 28px;
     line-height: 28px;
     margin-right: 15px;
-    .fa{
-      color: $text_white;
-    }
+    color: $text_white;
   }
   .mobile-header{
     display: table;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     #logo{
       display: table-cell !important;
